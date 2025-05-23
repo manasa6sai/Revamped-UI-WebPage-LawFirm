@@ -1,0 +1,970 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Button/Button.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+/* app/components/Button/Button.module.css */
+.Button_btn__u09Z7 {
+    display: inline-block;
+    padding: 12px 28px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase; /* If you want uppercase like original image buttons */
+  }
+  
+  .Button_btn__u09Z7.Button_primary__cRF_6 {
+    background-color: var(--maroon-primary);
+    color: var(--text-light);
+    box-shadow:
+      0 0 8px rgba(255, 255, 255, 0.3),
+      0 0 16px rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .Button_btn__u09Z7.Button_primary__cRF_6:hover {
+    background-color: var(--maroon-darker);
+    transform: translateY(-2px);
+    box-shadow:
+      0 0 12px rgba(255, 255, 255, 0.4),
+      0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  
+  
+  .Button_btn__u09Z7.Button_secondary__Xch1y { /* Example for other button types */
+    background-color: var(--grey-dark);
+    color: var(--text-light);
+  }
+  
+  .Button_btn__u09Z7.Button_secondary__Xch1y:hover {
+    background-color: var(--grey-medium);
+  }
+  
+  @media (max-width: 768px) {
+    .Button_btn__u09Z7 {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      width: auto; /* Allow stacking */
+      min-width: 200px; /* Ensure decent tap target */
+    }
+  }
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Hero/Hero.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+/* --- HERO SECTION STYLING --- */
+.Hero_heroSection__hn6R0 {
+  position: relative;
+  padding: 80px 20px 0;
+  color: white;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #535151;
+}
+
+.Hero_heroBackground__iVv2X {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/images/law-background.jpeg') no-repeat center center / cover;
+  z-index: 0;
+  opacity: 0.25;
+}
+
+/* Enhanced Hero Content */
+.Hero_heroContent__LmFbO {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  gap: 20px;
+  animation: Hero_fadeSlide__veMym 1s ease-in-out;
+}
+
+@keyframes Hero_fadeSlide__veMym {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Text Columns */
+.Hero_heroTextColumn__eHpCv {
+  flex: 1.2 1;
+  padding-right: 30px;
+}
+
+.Hero_heroImageColumn__z3kSP {
+  flex: 0.8 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: Hero_float__npixO 3s ease-in-out infinite;
+}
+
+@keyframes Hero_float__npixO {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Headline Styling */
+.Hero_headline__3EHa_ {
+  font-family: 'Merriweather', serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  animation: Hero_textFadeIn__pjE_5 1s ease-out;
+}
+
+@keyframes Hero_textFadeIn__pjE_5 {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Hero_subHeadline__zTJps {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #f8f8f8;
+  opacity: 0.95;
+  margin-bottom: 25px;
+  line-height: 1.7;
+  animation: Hero_textFadeIn__pjE_5 1.2s ease-out;
+}
+
+/* Justice Text with Pulse Effect */
+.Hero_justiceText__Otjb0 {
+  color: #ffdd57;
+  font-weight: 900;
+  text-shadow:
+    0 0 6px rgba(255, 221, 87, 0.8),
+    0 0 12px rgba(255, 221, 87, 0.6),
+    0 0 20px rgba(255, 221, 87, 0.4);
+  animation: Hero_pulseGlow__Oq0yR 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes Hero_pulseGlow__Oq0yR {
+  0% {
+    text-shadow:
+      0 0 4px rgba(255, 221, 87, 0.3),
+      0 0 8px rgba(255, 221, 87, 0.2);
+  }
+  100% {
+    text-shadow:
+      0 0 12px rgba(255, 221, 87, 0.9),
+      0 0 20px rgba(255, 221, 87, 0.7);
+  }
+}
+
+/* List of Highlights */
+.Hero_coyeHighlights__smXS0 {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  animation: Hero_textFadeIn__pjE_5 1.3s ease-out;
+}
+
+.Hero_coyeHighlights__smXS0 li {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  position: relative;
+  padding-left: 30px;
+}
+
+.Hero_coyeHighlights__smXS0 li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ffdd57;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Portrait Wrapper with Glow */
+.Hero_portraitWrapper__JqwLF {
+  position: relative;
+  padding: 12px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #601f24, #333534);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.Hero_portraitWrapper__JqwLF:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6),
+              0 0 20px rgba(240, 240, 238, 0.7);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .Hero_heroContent__LmFbO {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Hero_heroTextColumn__eHpCv {
+    padding-right: 0;
+  }
+
+  .Hero_headline__3EHa_ {
+    font-size: 2.5rem;
+  }
+
+  .Hero_subHeadline__zTJps {
+    font-size: 1.2rem;
+  }
+
+  .Hero_coyeHighlights__smXS0 li {
+    font-size: 1rem;
+  }
+
+  .Hero_heroButtons__rpTLl {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Reviews/Reviews.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+/* --- REVIEWS SECTION STYLING --- */
+.Reviews_reviewsSection__k3jD5 {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #601f24, #333534);
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.Reviews_heading__qd_os {
+  font-size: 2.5rem;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 30px;
+  color: #fff;
+  animation: Reviews_fadeUp__VlERh 1s ease-in-out;
+}
+
+/* Card Grid for Reviews */
+.Reviews_cardGrid__5dhGl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 20px;
+  gap: 20px;
+  justify-items: center;
+  padding: 20px 0;
+}
+
+/* Individual Review Card */
+.Reviews_card__J5Mk5 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px); 
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: Reviews_popupCard__Uyg9n 0.5s ease forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -135px; 
+}
+
+.Reviews_card__J5Mk5:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes Reviews_fadeUp__VlERh {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes Reviews_popupCard__Uyg9n {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.Reviews_stars__Bt_ex {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.Reviews_starIcon__qgdgT {
+  color: #f4c542;
+}
+
+.Reviews_feedback__2olj1 {
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.Reviews_reviewer__n__Qu {
+  font-weight: bold;
+  color: #f4c542;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .Reviews_heading__qd_os {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .Reviews_cardGrid__5dhGl {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+  }
+
+  .Reviews_card__J5Mk5 {
+    padding: 16px;
+    font-size: 1rem;
+  }
+
+  .Reviews_feedback__2olj1 {
+    font-size: 0.95rem;
+  }
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/ConsultationChatBot/ConsultationChatBot.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ConsultationChatBot_chatContainer__c0Zhk {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1000;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .ConsultationChatBot_floatingBubble__8ql9T {
+    background-color: #601f24;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    animation: ConsultationChatBot_pulse__2mugx 2s infinite;
+    transition: transform 0.3s ease;
+  }
+  
+  .ConsultationChatBot_floatingBubble__8ql9T:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes ConsultationChatBot_pulse__2mugx {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .ConsultationChatBot_popupOverlay__StMOF {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(231, 224, 224, 0.6);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ConsultationChatBot_fadeIn__bluuo 0.3s ease-out;
+  }
+  
+  @keyframes ConsultationChatBot_fadeIn__bluuo {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .ConsultationChatBot_popupWindow__zesKi {
+    background-color: #333534;
+    color: white;
+    width: 90%;
+    max-width: 460px;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+    animation: ConsultationChatBot_popUp__jTgSU 0.3s ease-out;
+  }
+  
+  @keyframes ConsultationChatBot_popUp__jTgSU {
+    from {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .ConsultationChatBot_popupHeader__WMMEd {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  
+  .ConsultationChatBot_popupHeader__WMMEd::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 36px;
+    width: 10px;
+    height: 10px;
+    background-color: #4caf50; /* green */
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.8);
+  }
+  
+  .ConsultationChatBot_closeBtn__gylrn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .ConsultationChatBot_popupBody__KrSk_ {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .ConsultationChatBot_slotList__oAxJM {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .ConsultationChatBot_slot__CCYrm {
+    background: #444;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .ConsultationChatBot_bookBtn__sqcfu {
+    background: #601f24;
+    color: #ffffff;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+  
+  .ConsultationChatBot_bookBtn__sqcfu:hover {
+    background: #6b272c;
+  }
+  
+  .ConsultationChatBot_bubbleText__RNNxl {
+    display: inline-block;
+  }
+  
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/ResultsHighlights/ResultsHighlights.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************/
+.ResultsHighlights_resultsSection__uAEkN {
+    padding: 60px 20px;
+    background: linear-gradient(-45deg, #601f24, #333534, #601f24);
+    background-size: 400% 400%;
+    animation: ResultsHighlights_lawGradient__3HsoZ 15s ease infinite;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  @keyframes ResultsHighlights_lawGradient__3HsoZ {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .ResultsHighlights_resultsSection__uAEkN::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background: url('/images/justice-scale-white.png') no-repeat center center / contain;
+    opacity: 0.04;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .ResultsHighlights_sectionTitle__DE2Ub {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fbfbfb;
+    font-family: 'Merriweather', serif;
+    background: linear-gradient(90deg, #f1dfe1, #f5f9f7, #fbfafa);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: ResultsHighlights_lawGlide__INO_Q 5s linear infinite;
+    position: relative;
+    z-index: 1;
+  }
+  
+  @keyframes ResultsHighlights_lawGlide__INO_Q {
+    0% {
+      background-position: 0% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+  
+  .ResultsHighlights_cardsContainer__8nqAj {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .ResultsHighlights_resultCard__1rRBN {
+    background-color: #1c2541;
+    color: white;
+    width: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow:
+      0 0 8px rgba(255, 255, 255, 0.1),
+      0 0 15px rgba(255, 255, 255, 0.05),
+      0 0 25px rgba(255, 255, 255, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    animation: ResultsHighlights_glowPulse__tRXnV 2.5s infinite ease-in-out;
+  }
+  
+  @keyframes ResultsHighlights_glowPulse__tRXnV {
+    0% {
+      box-shadow:
+        0 0 8px rgba(255, 255, 255, 0.05),
+        0 0 16px rgba(255, 255, 255, 0.08),
+        0 0 24px rgba(255, 255, 255, 0.04);
+    }
+    50% {
+      box-shadow:
+        0 0 16px rgba(255, 255, 255, 0.15),
+        0 0 32px rgba(255, 255, 255, 0.12),
+        0 0 40px rgba(255, 255, 255, 0.1);
+    }
+    100% {
+      box-shadow:
+        0 0 8px rgba(255, 255, 255, 0.05),
+        0 0 16px rgba(255, 255, 255, 0.08),
+        0 0 24px rgba(255, 255, 255, 0.04);
+    }
+  }
+  
+  .ResultsHighlights_resultCard__1rRBN:hover {
+    transform: translateY(-5px);
+  }
+  
+  .ResultsHighlights_cardTitle__ALS9f {
+    background-color: #1c2541;
+    padding: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .ResultsHighlights_amount__6ZvMy {
+    background-color: #601f24;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .ResultsHighlights_action__WGJ1j {
+    background-color: #1c2541;
+    padding: 16px;
+    font-style: italic;
+    color: #e0e0e0;
+  }
+  
+  .ResultsHighlights_centerButton__0vO8_ {
+    margin-top: 40px;
+  }
+  
+  .ResultsHighlights_viewAllBtn__fn294 {
+    background-color: #a6a6a6;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .ResultsHighlights_viewAllBtn__fn294:hover {
+    background-color: #8e8e8e;
+  }
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/ContactForm/ContactForm.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+/* ContactForm.module.css */
+
+/* Backside Gradient Animated Section */
+.ContactForm_backsideSection__aoss0 {
+    padding: 60px 20px;
+    background: linear-gradient(-45deg, #1c2541, #333534, #1c2541);
+    background-size: 400% 400%;
+    animation: ContactForm_lawGradient__XVpYo 15s ease infinite;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes ContactForm_lawGradient__XVpYo {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Container for Form and Map */
+.ContactForm_formMapContainer__fkV4Y {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* Form Section Styling */
+.ContactForm_formSection__rS1gd {
+    flex: 1 1;
+    padding: 40px 20px;
+    background-color: #1c2541;
+    color: #dbcaca;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+.ContactForm_title__6X_qM {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
+}
+
+/* Contact Form Layout */
+.ContactForm_contactForm___yTHB {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Input Group for Flex Layout */
+.ContactForm_inputGroup__f3usJ {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+/* Form Inputs, Selects, and Textareas */
+.ContactForm_input__MP93i, .ContactForm_select__WWM36, .ContactForm_textarea__vq10j {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #333534;
+    background-color: #3e4147;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ContactForm_input__MP93i:focus, .ContactForm_select__WWM36:focus, .ContactForm_textarea__vq10j:focus {
+    outline: none;
+    border-color: #f4c542;
+    box-shadow: 0 0 8px rgba(244, 197, 66, 0.5);
+}
+
+.ContactForm_textarea__vq10j {
+    height: 100px;
+    resize: vertical;
+}
+
+.ContactForm_checkboxLabel__Z2PyS {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+/* Submit Button Styling */
+.ContactForm_submitBtn__mwZ6e {
+    background-color: #601f24;
+    color: #ffffff;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ContactForm_submitBtn__mwZ6e:hover {
+    background-color: #8e282e;
+    transform: translateY(-2px);
+}
+
+.ContactForm_successMessage__Z2UeA {
+    color: #4caf50;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ContactForm_formMapContainer__fkV4Y {
+        flex-direction: column;
+    }
+
+    .ContactForm_title__6X_qM {
+        font-size: 1.8rem;
+    }
+
+    .ContactForm_input__MP93i, .ContactForm_select__WWM36, .ContactForm_textarea__vq10j {
+        font-size: 0.95rem;
+    }
+
+    .ContactForm_submitBtn__mwZ6e {
+        font-size: 1rem;
+    }
+}
+
+/* Map Section */
+.ContactForm_mapSection__qWNjM {
+    flex: 1 1;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.ContactForm_leaflet-container__2gZ1v {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .ContactForm_formMapContainer__fkV4Y {
+        flex-direction: column;
+    }
+
+    .ContactForm_mapSection__qWNjM {
+        margin-top: 20px;
+    }
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/CTABanner/CTABanner.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+/* CTABanner.module.css */
+
+.CTABanner_ctaButton__HsQGk {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #c53a3d; /* Bright red for attention */
+    color: #ffffff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.7); /* Strong red glow */
+    animation: CTABanner_glowPulse__Rj7A0 0.8s infinite, CTABanner_bounce__gEbZr 1s infinite;
+    transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.CTABanner_ctaButton__HsQGk.CTABanner_expanded__ZiBn7 {
+    width: 280px;
+    height: 90px;
+    border-radius: 35px;
+}
+
+.CTABanner_ctaButton__HsQGk:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+}
+
+.CTABanner_content__Zcf_7 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.CTABanner_phoneIcon__q14xJ {
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.CTABanner_phoneNumbers__Z502M {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+}
+
+.CTABanner_phoneNumbers__Z502M p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.CTABanner_attentionText__lh9Re {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff200;
+}
+
+.CTABanner_phoneNumbers__Z502M p:hover {
+    text-decoration: underline;
+}
+
+/* Flashing Glow Effect */
+@keyframes CTABanner_glowPulse__Rj7A0 {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.9), 0 0 40px rgba(255, 0, 0, 0.7);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(255, 0, 0, 1), 0 0 60px rgba(255, 0, 0, 0.9);
+        transform: scale(1.1);
+    }
+}
+
+/* Bouncing Animation */
+@keyframes CTABanner_bounce__gEbZr {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Wiggling Animation */
+@keyframes CTABanner_wiggle__Q6yfz {
+    0%, 100% { transform: rotate(0); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(5deg); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .CTABanner_ctaButton__HsQGk {
+        width: 60px;
+        height: 60px;
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .CTABanner_ctaButton__HsQGk.CTABanner_expanded__ZiBn7 {
+        width: 220px;
+        height: 60px;
+    }
+
+    .CTABanner_phoneIcon__q14xJ {
+        width: 24px;
+        height: 24px;
+    }
+
+    .CTABanner_phoneNumbers__Z502M p, .CTABanner_attentionText__lh9Re {
+        font-size: 1rem;
+    }
+}
+

@@ -1,0 +1,60 @@
+/* app/globals.css */
+:root {
+    --maroon-primary: #6a0d25;
+    --maroon-darker: #500a1c;
+    --grey-dark: #333333;
+    --grey-medium: #555555;
+    --grey-light: #f0f0f0; /* Lighter for header top background */
+    --grey-cta-banner: #e0e0e0; /* For reviews cta banner */
+    --text-light: #ffffff;
+    --text-dark: #212529;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-serif: "Georgia", "Times New Roman", Times, serif;
+  
+    --container-width: 1200px;
+    --container-padding: 20px;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    font-family: var(--font-sans);
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: #1c2541; /* Default background */
+  }
+  
+  body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+  }
+  
+  .container {
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }

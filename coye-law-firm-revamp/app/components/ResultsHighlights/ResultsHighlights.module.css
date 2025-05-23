@@ -1,0 +1,145 @@
+.resultsSection {
+    padding: 60px 20px;
+    background: linear-gradient(-45deg, #601f24, #333534, #601f24);
+    background-size: 400% 400%;
+    animation: lawGradient 15s ease infinite;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  @keyframes lawGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .resultsSection::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background: url('/images/justice-scale-white.png') no-repeat center center / contain;
+    opacity: 0.04;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fbfbfb;
+    font-family: 'Merriweather', serif;
+    background: linear-gradient(90deg, #f1dfe1, #f5f9f7, #fbfafa);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: lawGlide 5s linear infinite;
+    position: relative;
+    z-index: 1;
+  }
+  
+  @keyframes lawGlide {
+    0% {
+      background-position: 0% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+  
+  .cardsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .resultCard {
+    background-color: #1c2541;
+    color: white;
+    width: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow:
+      0 0 8px rgba(255, 255, 255, 0.1),
+      0 0 15px rgba(255, 255, 255, 0.05),
+      0 0 25px rgba(255, 255, 255, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    animation: glowPulse 2.5s infinite ease-in-out;
+  }
+  
+  @keyframes glowPulse {
+    0% {
+      box-shadow:
+        0 0 8px rgba(255, 255, 255, 0.05),
+        0 0 16px rgba(255, 255, 255, 0.08),
+        0 0 24px rgba(255, 255, 255, 0.04);
+    }
+    50% {
+      box-shadow:
+        0 0 16px rgba(255, 255, 255, 0.15),
+        0 0 32px rgba(255, 255, 255, 0.12),
+        0 0 40px rgba(255, 255, 255, 0.1);
+    }
+    100% {
+      box-shadow:
+        0 0 8px rgba(255, 255, 255, 0.05),
+        0 0 16px rgba(255, 255, 255, 0.08),
+        0 0 24px rgba(255, 255, 255, 0.04);
+    }
+  }
+  
+  .resultCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cardTitle {
+    background-color: #1c2541;
+    padding: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .amount {
+    background-color: #601f24;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .action {
+    background-color: #1c2541;
+    padding: 16px;
+    font-style: italic;
+    color: #e0e0e0;
+  }
+  
+  .centerButton {
+    margin-top: 40px;
+  }
+  
+  .viewAllBtn {
+    background-color: #a6a6a6;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .viewAllBtn:hover {
+    background-color: #8e8e8e;
+  }

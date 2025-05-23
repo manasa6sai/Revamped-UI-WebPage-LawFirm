@@ -1,0 +1,117 @@
+/* CTABanner.module.css */
+
+.ctaButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #c53a3d; /* Bright red for attention */
+    color: #ffffff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.7); /* Strong red glow */
+    animation: glowPulse 0.8s infinite, bounce 1s infinite;
+    transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.ctaButton.expanded {
+    width: 280px;
+    height: 90px;
+    border-radius: 35px;
+}
+
+.ctaButton:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.phoneIcon {
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.phoneNumbers {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+}
+
+.phoneNumbers p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.attentionText {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff200;
+}
+
+.phoneNumbers p:hover {
+    text-decoration: underline;
+}
+
+/* Flashing Glow Effect */
+@keyframes glowPulse {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.9), 0 0 40px rgba(255, 0, 0, 0.7);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(255, 0, 0, 1), 0 0 60px rgba(255, 0, 0, 0.9);
+        transform: scale(1.1);
+    }
+}
+
+/* Bouncing Animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Wiggling Animation */
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(5deg); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .ctaButton {
+        width: 60px;
+        height: 60px;
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .ctaButton.expanded {
+        width: 220px;
+        height: 60px;
+    }
+
+    .phoneIcon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .phoneNumbers p, .attentionText {
+        font-size: 1rem;
+    }
+}

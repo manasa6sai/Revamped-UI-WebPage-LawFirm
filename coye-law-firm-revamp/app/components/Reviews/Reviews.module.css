@@ -1,0 +1,116 @@
+/* --- REVIEWS SECTION STYLING --- */
+.reviewsSection {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #601f24, #333534);
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 30px;
+  color: #fff;
+  animation: fadeUp 1s ease-in-out;
+}
+
+/* Card Grid for Reviews */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px 0;
+}
+
+/* Individual Review Card */
+.card {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(2px); 
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: popupCard 0.5s ease forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -135px; 
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popupCard {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.stars {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.starIcon {
+  color: #f4c542;
+}
+
+.feedback {
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.reviewer {
+  font-weight: bold;
+  color: #f4c542;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .cardGrid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+  }
+
+  .card {
+    padding: 16px;
+    font-size: 1rem;
+  }
+
+  .feedback {
+    font-size: 0.95rem;
+  }
+}

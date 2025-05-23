@@ -1,0 +1,249 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Header/Header.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+/* --- HEADER STYLING --- */
+.Header_siteHeader__URT6i {
+  background-color: #601f24;
+  color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  animation: Header_headerGlow__0rnU_ 2s infinite alternate;
+}
+
+@keyframes Header_headerGlow__0rnU_ {
+  0% { box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); }
+  100% { box-shadow: 0 4px 12px rgba(96, 31, 36, 0.6); }
+}
+
+.Header_navContainer__sNmfw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  flex-wrap: nowrap;
+}
+
+/* --- LOGO --- */
+.Header_logo__0h7JC {
+  display: flex;
+  align-items: center;
+}
+
+.Header_logoLink__m6y4T {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
+
+.Header_logoIcon__79AsF {
+  margin-right: 10px;
+}
+
+.Header_logoCoye__meVDz {
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.Header_logoLawFirm__nvw9_ {
+  color: #333534;
+  background: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* --- NAVIGATION --- */
+.Header_mainNav__MwVey {
+  display: flex;
+  align-items: center;
+}
+
+.Header_navList__Vu6L_ {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Header_navItem__MQTn8 {
+  position: relative;
+}
+
+.Header_navLink__npAte {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  white-space: nowrap;
+}
+
+.Header_navLink__npAte::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.Header_navLink__npAte:hover::after {
+  width: 100%;
+}
+
+/* --- DROPDOWN STYLING --- */
+.Header_navItemWithPopup__AOnsi {
+  position: relative;
+}
+
+.Header_navLinkWithPopup__Pv6kJ {
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 0;
+}
+
+.Header_dropdownArrow__L3U6T {
+  font-size: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.Header_navItemWithPopup__AOnsi:hover .Header_dropdownArrow__L3U6T,
+.Header_navItemWithPopup__AOnsi:focus-within .Header_dropdownArrow__L3U6T {
+  transform: rotate(180deg);
+}
+
+.Header_popupMenu__2kCcC {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background-color: #333534;
+  padding: 12px 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 2000;
+  border-radius: 8px;
+}
+
+.Header_navItemWithPopup__AOnsi:hover .Header_popupMenu__2kCcC,
+.Header_navItemWithPopup__AOnsi:focus-within .Header_popupMenu__2kCcC,
+.Header_navItemWithPopup__AOnsi.Header_open___uX1t .Header_popupMenu__2kCcC {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.Header_popupItem__tMtig {
+  display: block;
+  padding: 10px 16px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.2s ease, padding-left 0.2s ease;
+}
+
+.Header_popupItem__tMtig:hover {
+  background-color: #601f24;
+  padding-left: 20px;
+}
+
+/* --- MOBILE STYLING --- */
+.Header_mobileNavToggle__g5cdb {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+@media (max-width: 960px) {
+  .Header_mobileNavToggle__g5cdb {
+    display: block;
+  }
+
+  .Header_mainNav__MwVey {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #601f24;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    z-index: 1000;
+  }
+
+  .Header_mobileNavActive__rLN04 .Header_mainNav__MwVey {
+    max-height: 400px;
+    visibility: visible;
+  }
+
+  .Header_navList__Vu6L_ {
+    flex-direction: column;
+    gap: 15px;
+    padding: 16px 0;
+  }
+
+  .Header_navLink__npAte {
+    font-size: 1.4rem;
+    padding: 12px 20px;
+    width: 100%;
+  }
+
+  .Header_popupMenu__2kCcC {
+    position: relative;
+    box-shadow: none;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+    background-color: #333534;
+    margin-top: 10px;
+  }
+
+  .Header_navItemWithPopup__AOnsi:hover .Header_popupMenu__2kCcC,
+  .Header_navItemWithPopup__AOnsi:focus-within .Header_popupMenu__2kCcC,
+  .Header_navItemWithPopup__AOnsi.Header_open___uX1t .Header_popupMenu__2kCcC {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/globals.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+/* styles/globals.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  h1 {
+    color: #601f24;
+  }
+  
