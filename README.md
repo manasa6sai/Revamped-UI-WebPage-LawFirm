@@ -40,6 +40,7 @@ This project is a complete revamp of a law firm's landing page built using **Rea
 
 ## 📂 Project Structure
 
+```bash
 coye-law-firm-revamp/
 ├── app/
 │   ├── components/
@@ -61,6 +62,7 @@ coye-law-firm-revamp/
 │       └── after.png
 ├── README.md
 └── package.json
+```
 
 ---
 
@@ -93,16 +95,16 @@ This project was built to:
 
 ## 🔗 Live Preview
 
-👉 View Live Site: https://your-vercel-link.vercel.app
+👉 View Live Site: https://your-vercel-link.vercel.app (yet to deploy)
 
 ---
 
 ## 📬 Contact
 
-Name: Manasa  
-Email: your.email@example.com  
-LinkedIn: https://linkedin.com/in/yourprofile  
-Portfolio: https://your-portfolio-link.com
+Name: Manasa Sai Karanam
+Email: manasakaranam6199@gmail.com
+LinkedIn: https://www.linkedin.com/in/manasa-sai-karanam/
+Portfolio: https://manasa6sai.github.io/manasa-portfolio/
 
 ---
 
