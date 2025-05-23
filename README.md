@@ -9,10 +9,10 @@ This project is a complete revamp of a law firm's landing page built using **Rea
 ## 📸 Before & After Comparison
 
 ### 🔴 Original Design (Before)
-![Before Screenshot](./public/images/before.png)
+![Before Screenshot](coye-law-firm-revamp/public/images/before.png)
 
 ### ✅ New Modern UI (After)
-![After Screenshot](./public/images/after.png)
+![After Screenshot](coye-law-firm-revamp/public/images/after.png)
 
 ---
 
